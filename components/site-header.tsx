@@ -43,6 +43,21 @@ export function SiteHeader() {
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
+            <Link
+              href={siteConfig.links.home}
+              target="_self"
+              rel="noreferrer"
+            >
+              <div
+                className={buttonVariants({
+                  size: "sm",
+                  variant: "ghost",
+                })}
+              >
+                <Icons.home className="h-5 w-5 fill-current" />
+                <span className="sr-only">Home</span>
+              </div>
+            </Link>
             <ThemeToggle />
           </nav>
         </div>
